@@ -11,9 +11,9 @@ const realizadas = document.getElementById("tareasRealizadas")
 let checks = document.querySelectorAll("flexCheckDefault")
 var contador = 0;
 let tareas = [
-    {id: 2233242323345, tarea: "Limpiar"},
-    {id: 3343442323243, tarea: "Barrer"},
-    {id: 4343443444354, tarea: "Fregar"},
+    {id: 223, tarea: "Limpiar"},
+    {id: 334, tarea: "Barrer"},
+    {id: 434, tarea: "Fregar"},
 ]
 
 
@@ -24,7 +24,7 @@ if (tareaInput.value == 0 || tareaInput.value == '') {
 } else {
   
   const NuevaTarea = tareaInput.value
-  tareas.push({id: Date.now(), tarea:NuevaTarea})
+  tareas.push({id: String(Date.now()).slice(0, 3), tarea:NuevaTarea})
   tareaInput.value = ""
   renderList(tareas)
 

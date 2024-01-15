@@ -1,8 +1,10 @@
 .card {
-    width: 80%;
-    margin: 2rem;
+    
+   margin: 0%;
+   border-radius: 0%;
     height: 40%;
  }
+ 
  .content_1 {
     flex-direction: row;
     display: flex;
@@ -27,11 +29,19 @@
 
  .X_mark {
     
-    
+    width: 100%;
     text-align: center;
+    
+    
  }
 
  .tabla {
-   width: 100%;
-   text-align: center;
+   margin: 0%;
+   background-color: black;
  }
+
+ .table {
+   width: 100%;
+ }
+ 
+ 
